@@ -1,12 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Пинк Главное</title>
+    </head>
+    <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+        <header class="page-header">
+            <div class="content-wrapper">
+                <div class="logo  logo--index  logo--header  logo--left">
+                    <span>
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
+                    </span>
+                </div>
+                <nav class="main-nav  main-nav--right">
+                    <span class="main-nav__toggle  main-nav__toggle--closed"></span>
+                    <div class="main-nav__wrapper  main-nav__wrapper--closed">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__list-item">
+                                <div class="logo  logo--header  logo--nav  logo--left">
+                                    <span>
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
+                                    </span>
+                                </div>
+                                <span class="main-nav__toggle  main-nav__toggle--opened"></span>
+                            </li>
+                            <li class="main-nav__list-item"><a href="#">Информация</a></li>
+                            <li class="main-nav__list-item"><a href="#">Возможности</a></li>
+                            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
+                            <li class="main-nav__list-item"><a href="#">Стоимость</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-  </body>
+        <main class="page-content">
+
+            <section class="intro">
+                <div class="content-wrapper">
+                    <p>Взгляните на жизнь иначе!</p>
+                </div>
+            </section>
+
+            <section class="download">
+                <div class="content-wrapper">
+                    <a class="btn btn--download" href="http://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</a>
+                    <ul class="download__list">
+                        <li class="download__list-item  download__list-item--apple">
+                            <a href="http://www.myapplemarket.com/">
+                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Apple">
+                            </a>
+                        </li>
+                        <li class="download__list-item  download__list-item--android">
+                            <a href="https://play.google.com/store/apps">
+                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Android">
+                            </a>
+                        </li>
+                        <li class="download__list-item  download__list-item--microsoft">
+                            <a href="https://www.microsoft.com/en-us/windows/apps-and-games">
+                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Microsoft">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <div class="content-wrapper">
+                    <header class="characteristics__header">
+                        <p>Устали от серости мегаполиса?</p>
+                        <p>Нам есть, что вам предложить!</p>
+                    </header>
+                    <ul class="characteristics__list">
+                        <li class="characteristics__list-item">
+                            <h2>Поднимает настроение</h2>
+                            <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                        </li>
+                        <li class="characteristics__list-item">
+                            <h2>Меняет мир вокруг</h2>
+                            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                        </li>
+                        <li class="characteristics__list-item">
+                            <h2>Заводит новых друзей</h2>
+                            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="content-wrapper">
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-1" checked>
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-2">
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-3">
+                    <ul class="review__list">
+                        <li class="review__list-item" id="review-list-item-1">
+                            <cite>Николай Петров</cite>
+                            <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                        </li>
+                        <li class="review__list-item" id="review-list-item-2">
+                            <cite>author</cite>
+                            <blockquote>opinion</blockquote>
+                        </li>
+                        <li class="review__list-item" id="review-list-item-3">
+                            <cite>author</cite>
+                            <blockquote>opinion</blockquote>
+                        </li>
+                    </ul>
+                    <div class="slider review__slider">
+                        <label class="slider--btn" for="review-toggler-1"></label>
+                        <label class="slider--btn" for="review-toggler-2"></label>
+                        <label class="slider--btn" for="review-toggler-3"></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price">
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-1">                  
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-2" checked>          
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-3">
+                <ul class="price__list">
+                    <li class="price__list-item" id="price-list-item-x">
+                        <table>
+                            <thead class="price__header">
+                                <tr>
+                                    <th>
+                                        <span class="price__name"></span>
+                                        <span class="price__value"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="price__components">
+                                <tr class="price__component price__component--pink-filter">
+                                    <td>Розовый фильтр</td>
+                                </tr>
+                                <tr class="price__component  price__component--emoticons">
+                                    <td>Смайлики</td>
+                                </tr>
+                                <tr class="price__component price__component--comments">
+                                    <td>Комментарии</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="price__list-item" id="price-list-item-standard">
+                        <table>
+                            <thead class="price__header">
+                                <tr>
+                                    <th>
+                                        <span class="price__name">Стандарт</span>
+                                        <span class="price__value">3,99 USD</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="price__components">
+                                <tr class="price__component price__component--pink-filter">
+                                    <td>Розовый фильтр</td>
+                                </tr>
+                                <tr class="price__component  price__component--emoticons">
+                                    <td>Смайлики</td>
+                                </tr>
+                                <tr class="price__component price__component--comments">
+                                    <td>Комментарии</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="price__list-item" id="price-list-item-y">
+                        <table>
+                            <thead class="price__header">
+                                <tr>
+                                    <th>
+                                        <span class="price__name"></span>
+                                        <span class="price__value"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="price__components">
+                                <tr class="price__component price__component--pink-filter">
+                                    <td>Розовый фильтр</td>
+                                </tr>
+                                <tr class="price__component  price__component--emoticons">
+                                    <td>Смайлики</td>
+                                </tr>
+                                <tr class="price__component price__component--comments">
+                                    <td>Комментарии</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <div class="slider price__slider">
+                    <label class="slider--btn" for="price-toggler-1"></label>
+                    <label class="slider--btn" for="price-toggler-2"></label>
+                    <label class="slider--btn" for="price-toggler-3"></label>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="content-wrapper">
+                    <header class="contacts__header">
+                        <span>Остались вопросы?</span>
+                        <span>Свяжитесь с нами!</span>
+                    </header>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <b class="contacts__description">Звоните:</b>
+                            <span class="contacts__value">+7 (812) 555-66-66</span>
+                        </li>
+                        <li class="contacts__list-item">
+                            <b class="contacts__description">Пишите:</b>
+                            <span class="contacts__value">mail@htmlacademy.ru</span>
+                        </li>
+                        <li class="contacts__list-item">
+                            <b class="contacts__description">Приезжайте в гости:</b>
+                            <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="contacts__footer  contacts__footer--map">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="map">
+                </footer>
+            </section>
+
+        </main>
+
+    </body>
 </html>
