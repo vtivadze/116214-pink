@@ -8,27 +8,17 @@
 
 		<header class="page-header">
 			<div class="content-wrapper">
-				<div class="logo  logo--header  logo--left">
-					<a href="index.html">
-						<img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-					</a>
-				</div>
-				<nav class="main-nav  main-nav--right">
-					<span class="main-nav__toggle  main-nav__toggle--closed"></span>
-					<div class="main-nav__wrapper  main-nav__wrapper--closed">
+				<a class="logo  logo--header" href="index.html">
+					<img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
+				</a>
+				<nav class="main-nav  main-nav--closed">
+					<span class="main-nav__toggle"></span>
+					<div class="main-nav__wrapper">
 						<ul class="main-nav__list">
-							<li class="main-nav__list-item">
-								<div class="logo  logo--nav  logo--left">
-									<a href="index.html">
-										<img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-									</a>
-								</div>
-								<span class="main-nav__toggle  main-nav__toggle--opened"></span>
-							</li>
 							<li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-							<li class="main-nav__list-item"><a href="#">Фотографии</a></li>
-							<li class="main-nav__list-item"><a href="#">Конкурс</a></li>
-							<li class="main-nav__list-item"><a href="#">HMTL Academy</a></li>
+							<li class="main-nav__list-item main-nav__list-item--current">Фотографии</li>
+							<li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+							<li class="main-nav__list-item"><a href="htmlacademy.ru">HMTL Academy</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -43,11 +33,11 @@
 			</section>
 
 			<section class="posts">
-				<header class="posts__header">
+				<div class="posts__header">
 					<div class="content-wrapper">
 						<p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 					</div>
-				</header>
+				</div>
 				<div class="posts__list">
 					<article class="posts__list-item">
 						<div class="posts__list-item-image  posts__list-item-image--best">
@@ -155,39 +145,43 @@
 						</div>
 					</article>
 				</div>
-				<footer class="posts__footer">
+				<div class="posts__footer">
 					<div class="content-wrapper">
 						<p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
 					</div>
-				</footer>
+				</div>
 			</section>
 
-			<section class="adding-item">
+			<section class="add-item">
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<div class="adding-item__photo">
+					<div class="add-item__photo">
 						<img src="http://placehold.it/150x100" width="150" height="100" alt="your photo">
 					</div>
-					<div class="adding-item__edit-tools">
-						<input type="radio" name="edit-tools" id="edit-tools-1" checked>
-						<label class="adding-item__edit-tools-item"></label>
-
-						<input type="radio" name="edit-tools" id="edit-tools-2">
-						<label class="adding-item__edit-tools-item"></label>
-
-						<input type="radio" name="edit-tools" id="edit-tools-3">
-						<label class="adding-item__edit-tools-item"></label>
+					<div class="add-item__edit-tools">
+						<div class="add-item__edit-tools-item">
+							<input type="radio" name="edit-tool" value="crop" checked>
+							<label id="edit-tool-crop"></label>
+						</div>
+						<div class="add-item__edit-tools-item">
+							<input type="radio" name="edit-tool" value="fill">
+							<label id="edit-tool-fill"></label>
+						</div>
+						<div class="add-item__edit-tools-item">
+							<input type="radio" name="edit-tool" value="contrast">
+							<label id="edit-tool-contrast"></label>
+						</div>
 					</div>
-					<div class="adding-item__edit-tools-value">
-						<input type="text" id="edit-tools-value-1">
-						<div class="adding-item__edit-tools-value" id="edit-tools-value-range-1"></div>
+					<div class="add-item__edit-tools-value">
+						<input type="text" name="edit-tool-crop-value">
+						<div id="edit-tool-crop-value"></div>
 
-						<input type="text" id="edit-tools-value-2">
-						<div class="adding-item__edit-tools-value" id="edit-tools-value-range-2"></div>
+						<input type="text" name="edit-tool-fill-value">
+						<div id="edit-tool-fill-value"></div>
 
-						<input type="text" id="edit-tools-value-3">
-						<div class="adding-item__edit-tools-value" id="edit-tools-value-range-3"></div>
+						<input type="text" name="edit-tool-contrast-value">
+						<div id="edit-tool-contrast-value"></div>
 					</div>
-					<div class="adding-item__actions">
+					<div class="add-item__actions">
 						<input type="submit" class="btn btn--post" value="Запостить">
 						<input type="reset" class="btn btn--cancel" value="Отмена">
 					</div>
@@ -197,20 +191,18 @@
 
 		<footer class="page-footer">
 			<div class="content-wrapper">
-				<section class="logo  logo--footer">
-					<a href="index.html">
-						<img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-					</a>
-				</section>
-				<section class="page-footer__social">
+				<a class="logo  logo--footer" href="index.html">
+					<img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
+				</a>
+				<div class="page-footer__social">
 					<a class="page-footer__social-btn  page-footer__social-btn--tw" href="#">Twitter</a>
 					<a class="page-footer__social-btn  page-footer__social-btn--fb" href="#">Facebook</a>
 					<a class="page-footer__social-btn  page-footer__social-btn--yt" href="#">Youtube</a>
-				</section>
-				<section class="page-footer__copyright">
+				</div>
+				<div class="page-footer__copyright">
 					<span>Разработано</span>
 					<img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy Logo">
-				</section>
+				</div>
 			</div>
 		</footer>
 		

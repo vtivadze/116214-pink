@@ -8,27 +8,17 @@
 
         <header class="page-header">
             <div class="content-wrapper">
-                <div class="logo  logo--index  logo--header  logo--left">
-                    <span>
-                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-                    </span>
+                <div class="logo  logo--header">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
                 </div>
-                <nav class="main-nav  main-nav--right">
-                    <span class="main-nav__toggle  main-nav__toggle--closed"></span>
-                    <div class="main-nav__wrapper  main-nav__wrapper--closed">
+                <nav class="main-nav  main-nav--closed">
+                    <span class="main-nav__toggle"></span>
+                    <div class="main-nav__wrapper">
                         <ul class="main-nav__list">
-                            <li class="main-nav__list-item">
-                                <div class="logo  logo--header  logo--nav  logo--left">
-                                    <span>
-                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-                                    </span>
-                                </div>
-                                <span class="main-nav__toggle  main-nav__toggle--opened"></span>
-                            </li>
-                            <li class="main-nav__list-item"><a href="#">Информация</a></li>
-                            <li class="main-nav__list-item"><a href="#">Возможности</a></li>
-                            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
-                            <li class="main-nav__list-item"><a href="#">Стоимость</a></li>
+                            <li class="main-nav__list-item"><a href="#contacts">Информация</a></li>
+                            <li class="main-nav__list-item"><a href="#characteristics">Возможности</a></li>
+                            <li class="main-nav__list-item"><a href="#review">Отзывы</a></li>
+                            <li class="main-nav__list-item"><a href="#price">Стоимость</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -48,19 +38,13 @@
                     <a class="btn btn--download" href="http://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</a>
                     <ul class="download__list">
                         <li class="download__list-item  download__list-item--apple">
-                            <a href="http://www.myapplemarket.com/">
-                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Apple">
-                            </a>
+                            <a href="http://www.myapplemarket.com/">Apple</a>
                         </li>
                         <li class="download__list-item  download__list-item--android">
-                            <a href="https://play.google.com/store/apps">
-                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Android">
-                            </a>
+                            <a href="https://play.google.com/store/apps">Android</a>
                         </li>
                         <li class="download__list-item  download__list-item--microsoft">
-                            <a href="https://www.microsoft.com/en-us/windows/apps-and-games">
-                                <img src="http://placehold.it/150x100" width="150" height="100" alt="Microsoft">
-                            </a>
+                            <a href="https://www.microsoft.com/en-us/windows/apps-and-games">Microsoft</a>
                         </li>
                     </ul>
                     <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -69,10 +53,10 @@
 
             <section class="characteristics">
                 <div class="content-wrapper">
-                    <header class="characteristics__header">
+                    <a class="characteristics__header" name="characteristics">
                         <p>Устали от серости мегаполиса?</p>
                         <p>Нам есть, что вам предложить!</p>
-                    </header>
+                    </a>
                     <ul class="characteristics__list">
                         <li class="characteristics__list-item">
                             <h2>Поднимает настроение</h2>
@@ -95,20 +79,20 @@
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-1" checked>
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-2">
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-3">
-                    <ul class="review__list">
-                        <li class="review__list-item" id="review-list-item-1">
-                            <cite>Николай Петров</cite>
-                            <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-                        </li>
-                        <li class="review__list-item" id="review-list-item-2">
-                            <cite>author</cite>
-                            <blockquote>opinion</blockquote>
-                        </li>
-                        <li class="review__list-item" id="review-list-item-3">
-                            <cite>author</cite>
-                            <blockquote>opinion</blockquote>
-                        </li>
-                    </ul>
+                    <a class="review__list" name="review">
+                        <blockquote class="review__quote" id="review-quote-1">
+                            <cite class="review__quote-author">Николай Петров</cite>
+                            <p class="review__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        </blockquote>
+                        <blockquote class="review__quote" id="review-quote-2">
+                            <cite class="review__quote-author">author</cite>
+                            <p class="review__quote-text">opinion</p>
+                        </blockquote>
+                        <blockquote class="review__quote" id="review-quote-3">
+                            <cite class="review__quote-author">author</cite>
+                            <p class="review__quote-text">opinion</p>
+                        </blockquote>
+                    </a>
                     <div class="slider review__slider">
                         <label class="slider--btn" for="review-toggler-1"></label>
                         <label class="slider--btn" for="review-toggler-2"></label>
@@ -118,11 +102,10 @@
             </section>
 
             <section class="price">
-                <input class="slider__toggler" type="radio" name="price" id="price-toggler-1">                  
-                <input class="slider__toggler" type="radio" name="price" id="price-toggler-2" checked>          
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-1">
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-2" checked>
                 <input class="slider__toggler" type="radio" name="price" id="price-toggler-3">
-                <ul class="price__list">
-                    <li class="price__list-item" id="price-list-item-x">
+                    <a name="price">
                         <table>
                             <thead class="price__header">
                                 <tr>
@@ -130,48 +113,10 @@
                                         <span class="price__name"></span>
                                         <span class="price__value"></span>
                                     </th>
-                                </tr>
-                            </thead>
-                            <tbody class="price__components">
-                                <tr class="price__component price__component--pink-filter">
-                                    <td>Розовый фильтр</td>
-                                </tr>
-                                <tr class="price__component  price__component--emoticons">
-                                    <td>Смайлики</td>
-                                </tr>
-                                <tr class="price__component price__component--comments">
-                                    <td>Комментарии</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                    <li class="price__list-item" id="price-list-item-standard">
-                        <table>
-                            <thead class="price__header">
-                                <tr>
-                                    <th>
+                                     <th>
                                         <span class="price__name">Стандарт</span>
                                         <span class="price__value">3,99 USD</span>
                                     </th>
-                                </tr>
-                            </thead>
-                            <tbody class="price__components">
-                                <tr class="price__component price__component--pink-filter">
-                                    <td>Розовый фильтр</td>
-                                </tr>
-                                <tr class="price__component  price__component--emoticons">
-                                    <td>Смайлики</td>
-                                </tr>
-                                <tr class="price__component price__component--comments">
-                                    <td>Комментарии</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                    <li class="price__list-item" id="price-list-item-y">
-                        <table>
-                            <thead class="price__header">
-                                <tr>
                                     <th>
                                         <span class="price__name"></span>
                                         <span class="price__value"></span>
@@ -179,19 +124,24 @@
                                 </tr>
                             </thead>
                             <tbody class="price__components">
-                                <tr class="price__component price__component--pink-filter">
+                                <tr class="price__component price__component--filter">
+                                    <td>Розовый фильтр</td>
+                                    <td>Розовый фильтр</td>
                                     <td>Розовый фильтр</td>
                                 </tr>
                                 <tr class="price__component  price__component--emoticons">
                                     <td>Смайлики</td>
+                                    <td>Смайлики</td>
+                                    <td>Смайлики</td>
                                 </tr>
                                 <tr class="price__component price__component--comments">
+                                    <td>Комментарии</td>
+                                    <td>Комментарии</td>
                                     <td>Комментарии</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </li>
-                </ul>
+                    </a>
                 <div class="slider price__slider">
                     <label class="slider--btn" for="price-toggler-1"></label>
                     <label class="slider--btn" for="price-toggler-2"></label>
@@ -201,28 +151,28 @@
 
             <section class="contacts">
                 <div class="content-wrapper">
-                    <header class="contacts__header">
-                        <span>Остались вопросы?</span>
-                        <span>Свяжитесь с нами!</span>
-                    </header>
+                    <a class="contacts__header" name="contacts">
+                        <p>Остались вопросы?</p>
+                        <p>Свяжитесь с нами!</p>
+                    </a>
                     <ul class="contacts__list">
                         <li class="contacts__list-item">
-                            <b class="contacts__description">Звоните:</b>
-                            <span class="contacts__value">+7 (812) 555-66-66</span>
+                            <h4 class="contacts__description">Звоните:</h4>
+                            <p class="contacts__value">+7 (812) 555-66-66</p>
                         </li>
                         <li class="contacts__list-item">
-                            <b class="contacts__description">Пишите:</b>
-                            <span class="contacts__value">mail@htmlacademy.ru</span>
+                            <h4 class="contacts__description">Пишите:</h4>
+                            <p class="contacts__value">mail@htmlacademy.ru</p>
                         </li>
                         <li class="contacts__list-item">
-                            <b class="contacts__description">Приезжайте в гости:</b>
-                            <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
+                            <h4 class="contacts__description">Приезжайте в гости:</h4>
+                            <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
                         </li>
                     </ul>
                 </div>
-                <footer class="contacts__footer  contacts__footer--map">
+                <div class="contacts__footer  contacts__footer--map">
                     <img src="http://placehold.it/150x100" width="150" height="100" alt="map">
-                </footer>
+                </div>
             </section>
 
         </main>
