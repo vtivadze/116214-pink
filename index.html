@@ -53,10 +53,10 @@
 
             <section class="characteristics">
                 <div class="content-wrapper">
-                    <a class="characteristics__header" name="characteristics">
+                    <div class="characteristics__header" id="characteristics">
                         <p>Устали от серости мегаполиса?</p>
                         <p>Нам есть, что вам предложить!</p>
-                    </a>
+                    </div>
                     <ul class="characteristics__list">
                         <li class="characteristics__list-item">
                             <h2>Поднимает настроение</h2>
@@ -79,20 +79,26 @@
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-1" checked>
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-2">
                     <input class="slider__toggler" type="radio" name="review" id="review-toggler-3">
-                    <a class="review__list" name="review">
-                        <blockquote class="review__quote" id="review-quote-1">
-                            <cite class="review__quote-author">Николай Петров</cite>
-                            <p class="review__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                        </blockquote>
-                        <blockquote class="review__quote" id="review-quote-2">
-                            <cite class="review__quote-author">author</cite>
-                            <p class="review__quote-text">opinion</p>
-                        </blockquote>
-                        <blockquote class="review__quote" id="review-quote-3">
-                            <cite class="review__quote-author">author</cite>
-                            <p class="review__quote-text">opinion</p>
-                        </blockquote>
-                    </a>
+                    <ul class="review__list" id="review">
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-1">
+                                <cite class="review__quote-author">Николай Петров</cite>
+                                <p class="review__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                            </blockquote>
+                        </li>
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-2">
+                                <cite class="review__quote-author">author</cite>
+                                <p class="review__quote-text">opinion</p>
+                            </blockquote>
+                        </li>
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-3">
+                                <cite class="review__quote-author">author</cite>
+                                <p class="review__quote-text">opinion</p>
+                            </blockquote>
+                        </li>
+                    </ul>
                     <div class="slider review__slider">
                         <label class="slider--btn" for="review-toggler-1"></label>
                         <label class="slider--btn" for="review-toggler-2"></label>
@@ -105,8 +111,8 @@
                 <input class="slider__toggler" type="radio" name="price" id="price-toggler-1">
                 <input class="slider__toggler" type="radio" name="price" id="price-toggler-2" checked>
                 <input class="slider__toggler" type="radio" name="price" id="price-toggler-3">
-                    <a name="price">
-                        <table>
+                    <div class="price__table-wrapper" id="price">
+                        <table class="price_table">
                             <thead class="price__header">
                                 <tr>
                                     <th>
@@ -141,7 +147,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </a>
+                    </div>
                 <div class="slider price__slider">
                     <label class="slider--btn" for="price-toggler-1"></label>
                     <label class="slider--btn" for="price-toggler-2"></label>
@@ -151,10 +157,10 @@
 
             <section class="contacts">
                 <div class="content-wrapper">
-                    <a class="contacts__header" name="contacts">
+                    <div class="contacts__header" id="contacts">
                         <p>Остались вопросы?</p>
                         <p>Свяжитесь с нами!</p>
-                    </a>
+                    </div>
                     <ul class="contacts__list">
                         <li class="contacts__list-item">
                             <h4 class="contacts__description">Звоните:</h4>
