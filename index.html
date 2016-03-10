@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Пинк Главное</title>
+    </head>
+    <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+        <header class="page-header">
+            <div class="content-wrapper">
+                <div class="logo  logo--header">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
+                </div>
+                <nav class="main-nav  main-nav--closed">
+                    <span class="main-nav__toggle"></span>
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__list-item"><a href="#contacts">Информация</a></li>
+                            <li class="main-nav__list-item"><a href="#characteristics">Возможности</a></li>
+                            <li class="main-nav__list-item"><a href="#review">Отзывы</a></li>
+                            <li class="main-nav__list-item"><a href="#price">Стоимость</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-  </body>
+        <main class="page-content">
+
+            <section class="intro">
+                <div class="content-wrapper">
+                    <p>Взгляните на жизнь иначе!</p>
+                </div>
+            </section>
+
+            <section class="download">
+                <div class="content-wrapper">
+                    <a class="btn btn--download" href="http://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</a>
+                    <ul class="download__list">
+                        <li class="download__list-item  download__list-item--apple">
+                            <a href="http://www.myapplemarket.com/">Apple</a>
+                        </li>
+                        <li class="download__list-item  download__list-item--android">
+                            <a href="https://play.google.com/store/apps">Android</a>
+                        </li>
+                        <li class="download__list-item  download__list-item--microsoft">
+                            <a href="https://www.microsoft.com/en-us/windows/apps-and-games">Microsoft</a>
+                        </li>
+                    </ul>
+                    <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <div class="content-wrapper">
+                    <div class="characteristics__header" id="characteristics">
+                        <p>Устали от серости мегаполиса?</p>
+                        <p>Нам есть, что вам предложить!</p>
+                    </div>
+                    <ul class="characteristics__list">
+                        <li class="characteristics__list-item">
+                            <h2>Поднимает настроение</h2>
+                            <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                        </li>
+                        <li class="characteristics__list-item">
+                            <h2>Меняет мир вокруг</h2>
+                            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                        </li>
+                        <li class="characteristics__list-item">
+                            <h2>Заводит новых друзей</h2>
+                            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="content-wrapper">
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-1" checked>
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-2">
+                    <input class="slider__toggler" type="radio" name="review" id="review-toggler-3">
+                    <ul class="review__list" id="review">
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-1">
+                                <cite class="review__quote-author">Николай Петров</cite>
+                                <p class="review__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                            </blockquote>
+                        </li>
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-2">
+                                <cite class="review__quote-author">author</cite>
+                                <p class="review__quote-text">opinion</p>
+                            </blockquote>
+                        </li>
+                        <li class="review__list-item">
+                            <blockquote class="review__quote" id="review-quote-3">
+                                <cite class="review__quote-author">author</cite>
+                                <p class="review__quote-text">opinion</p>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <div class="slider review__slider">
+                        <label class="slider--btn" for="review-toggler-1"></label>
+                        <label class="slider--btn" for="review-toggler-2"></label>
+                        <label class="slider--btn" for="review-toggler-3"></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price">
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-1">
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-2" checked>
+                <input class="slider__toggler" type="radio" name="price" id="price-toggler-3">
+                    <div class="price__table-wrapper" id="price">
+                        <table class="price_table">
+                            <thead class="price__header">
+                                <tr>
+                                    <th>
+                                        <span class="price__name"></span>
+                                        <span class="price__value"></span>
+                                    </th>
+                                    <th>
+                                        <span class="price__name">Стандарт</span>
+                                        <span class="price__value">3,99 USD</span>
+                                    </th>
+                                    <th>
+                                        <span class="price__name"></span>
+                                        <span class="price__value"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="price__components">
+                                <tr class="price__component price__component--filter">
+                                    <td>Розовый фильтр</td>
+                                    <td>Розовый фильтр</td>
+                                    <td>Розовый фильтр</td>
+                                </tr>
+                                <tr class="price__component  price__component--emoticons">
+                                    <td>Смайлики</td>
+                                    <td>Смайлики</td>
+                                    <td>Смайлики</td>
+                                </tr>
+                                <tr class="price__component price__component--comments">
+                                    <td>Комментарии</td>
+                                    <td>Комментарии</td>
+                                    <td>Комментарии</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <div class="slider price__slider">
+                    <label class="slider--btn" for="price-toggler-1"></label>
+                    <label class="slider--btn" for="price-toggler-2"></label>
+                    <label class="slider--btn" for="price-toggler-3"></label>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="content-wrapper">
+                    <div class="contacts__header" id="contacts">
+                        <p>Остались вопросы?</p>
+                        <p>Свяжитесь с нами!</p>
+                    </div>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <h4 class="contacts__description">Звоните:</h4>
+                            <p class="contacts__value">+7 (812) 555-66-66</p>
+                        </li>
+                        <li class="contacts__list-item">
+                            <h4 class="contacts__description">Пишите:</h4>
+                            <p class="contacts__value">mail@htmlacademy.ru</p>
+                        </li>
+                        <li class="contacts__list-item">
+                            <h4 class="contacts__description">Приезжайте в гости:</h4>
+                            <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__footer  contacts__footer--map">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="map">
+                </div>
+            </section>
+
+        </main>
+
+    </body>
 </html>
