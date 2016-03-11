@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Vakhtang Tivadze](https://up.htmlacademy.ru/adaptive/6/user/116214).
-* Наставник: `Илья Сачев`.
+- Студент: [Vakhtang Tivadze](https://up.htmlacademy.ru/adaptive/6/user/116214).
+- Наставник: `Илья Сачев`.
 
 ---
 
