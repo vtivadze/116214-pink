@@ -1,3 +1,45 @@
 .main-nav {
-    @include outline($color-level-2);
+    @include outline($color-level-4);
+    @include clearfix;
+     &__toggle {
+        @include outline($color-level-5);
+        @include float-right;
+        width: 27px;
+        height: 27px;
+        display: block;
+        @media ($descktop-widths) {
+            display: none;
+        }
+    }
+    &__wrapper {
+        @include outline($color-level-5);
+        background-color: #888;
+        position: absolute;
+        left: 0;
+        top: $mob-page-header-top-height + 5;
+        @media ($tablet-widths) {
+            top: $tab-page-header-top-height + 5;
+            z-index: 10;
+        }
+        @media ($descktop-widths) {
+            position: static;
+            @include float-right;
+        }
+    }
+    &__list {
+        @extend %norm-list;
+        &-item {
+            height: 62px;
+            text-align: center;
+            width: $mob-body-width;
+            @media ($tablet-widths) {
+                width: $tab-body-width;
+            }
+            @media ($descktop-widths) {
+                display: inline-block;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
 }

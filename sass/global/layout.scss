@@ -1,0 +1,21 @@
+body {
+    width: $mob-body-width;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+        width: $tab-body-width;
+    }
+    @media ($descktop-widths) {
+        width: $desk-body-width;
+    }
+}
+
+.content-wrapper {
+    width: $mob-wrapper-width;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+        width: $tab-wrapper-width;
+    }
+    @media ($descktop-widths) {
+        width: $desk-wrapper-width;
+    }
+}

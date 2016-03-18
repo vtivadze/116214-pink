@@ -1,3 +1,44 @@
 .characteristics {
-	@include outline($color-level-3);
+	@include outline($color-level-1);
+	.content-wrapper {
+		@include outline($color-level-2);
+	}
+	&__list {
+		@include outline($color-level-3);
+		@extend %norm-list;
+	}
+	&__header {
+		@include outline($color-level-3);
+		text-align: center;
+	}
+	&__list-item {
+		@include outline($color-level-4);
+	}
+	@media ($tablet-widths) {
+		.content-wrapper {
+			@include clearfix;
+		}
+		&__list {
+			width: 310px;
+			@include float-right;
+		}
+	}
+	@media ($descktop-widths) {
+		.content-wrapper {
+			width: auto;
+		}
+		&__list {
+			@include float-none;
+			width: auto;
+			text-align: center;
+			&-item {
+				display: inline-block;
+				vertical-align: top;
+				width: 245px;
+			}
+			& li {
+				padding-top: 350px;
+			}
+		}
+	}
 }

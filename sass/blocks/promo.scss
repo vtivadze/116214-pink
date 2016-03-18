@@ -1,0 +1,25 @@
+.promo {
+	@include outline($color-level-1);
+	display: none;
+	.content-wrapper {
+		@include outline($color-level-2);
+	}
+	&__wrapper {
+		@include outline($color-level-3);
+	}
+	@media ($tablet-widths) {
+		display: block;
+		.content-wrapper {
+			@include clearfix;
+		}
+		&__wrapper {
+			width: 310px;
+			@include float-right;
+		}
+	}
+	@media ($descktop-widths) {
+		&__wrapper {
+			width: 570px;
+		}
+	}
+}

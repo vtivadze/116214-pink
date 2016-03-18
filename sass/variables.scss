@@ -1,3 +1,21 @@
 $color-level-1: red;
 $color-level-2: blue;
 $color-level-3: green;
+$color-level-4: yellow;
+$color-level-5: orange;
+$color-level-6: blueviolet;
+
+$mob-body-width: 340px;
+$tab-body-width: 700px;
+$desk-body-width: 1200px;
+
+$mob-wrapper-width: 280px;
+$tab-wrapper-width: 620px;
+$desk-wrapper-width: 940px;
+
+$mob-page-header-top-height: 67px;
+$tab-page-header-top-height: 107px;
+
+$mobile-widths-only: "max-width: #{$mob-body-width}";
+$tablet-widths: "min-width: #{$tab-body-width}";
+$descktop-widths: "min-width: #{$desk-body-width}";

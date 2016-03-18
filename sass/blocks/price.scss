@@ -1,3 +1,44 @@
 .price {
-	@include outline($color-level-3);
+	table,
+	th,
+	td {
+		border: 1px solid grey;
+	}
+	overflow: hidden;
+	@include outline($color-level-1);
+	.slider__toggler {
+		display: none;
+	}
+	&__table-wrapper {
+		@include outline($color-level-2);
+		width: $mob-wrapper-width *4;
+		margin-left: -$mob-wrapper-width * 2;
+	}
+	&__table {
+		@include outline($color-level-3);
+	}
+	&__name,
+	&__value {
+		display: block;
+	}
+	td {
+		width: $mob-wrapper-width;
+	}
+	@media ($tablet-widths) {
+		&__table-wrapper {
+			margin-left: 0;
+		}
+		td {
+			width: auto;
+		}
+		&__table-wrapper {
+			width: auto;
+		}
+		table {
+		width: 100%;
+		}
+		td:nth-child(n+2) span {
+			display: none;
+		}
+	}
 }

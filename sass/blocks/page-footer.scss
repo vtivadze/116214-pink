@@ -1,3 +1,17 @@
 .page-footer {
 	@include outline($color-level-1);
+	.content-wrapper {
+		@include outline($color-level-2);
+		@include clearfix;
+	}
+	display: none;
+	@media ($tablet-widths) {
+		display: block;
+		&__logo,
+		&__social,
+		&__copyright {
+			@include outline($color-level-3);
+			@include float-left;
+		}
+	}
 }
