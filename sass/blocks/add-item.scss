@@ -1,3 +1,54 @@
 .add-item {
 	@include outline($color-level-2);
+	.content-wrapper {
+		@include outline($color-level-3);
+	}
+	&__intro {
+		@include outline($color-level-4);
+		text-align: center;
+	}
+	&__photo {
+		@include outline($color-level-4);
+	}
+	&__edit-tools {
+		@include outline($color-level-4);
+		text-align: center;
+		&-item {
+			display: inline-block;
+		}
+	}
+	&__edit-tools-value {
+		display: none;
+	}
+	&__actions {
+		@include outline($color-level-4);
+		input {
+			display: block;
+			width: 100%;
+			@include outline($color-level-5);
+		}
+	}
+	@media ($tablet-widths) {
+		form {
+			@include clearfix;
+			.add-item__photo {
+				@include float-left;
+			}
+			.add-item__edit {
+				@include float-right;
+			}
+		}
+	}
+	@media ($descktop-widths) {
+		.add-item__edit {
+			width: 400px;
+		}
+		.add-item__edit-tools-item {
+			display: block;
+		}
+		.add-item__actions input {
+			display: inline-block;
+			width: 190px;
+		}
+	}
 }

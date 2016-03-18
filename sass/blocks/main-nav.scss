@@ -17,9 +17,9 @@
         position: absolute;
         left: 0;
         top: $mob-page-header-top-height + 5;
+        z-index: 10;
         @media ($tablet-widths) {
             top: $tab-page-header-top-height + 5;
-            z-index: 10;
         }
         @media ($descktop-widths) {
             position: static;

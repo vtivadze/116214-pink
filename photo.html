@@ -5,38 +5,37 @@
         <title>Пинк Фото</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="photo">
 
         <header class="page-header">
-            <div class="content-wrapper">
-                <a class="logo  logo--header" href="index.html">
-                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-                </a>
-                <nav class="main-nav  main-nav--closed">
-                    <span class="main-nav__toggle"></span>
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-                            <li class="main-nav__list-item main-nav__list-item--current">Фотографии</li>
-                            <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
-                            <li class="main-nav__list-item"><a href="htmlacademy.ru">HMTL Academy</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <section class="page-header__top">
+                <div class="content-wrapper">
+                    <nav class="main-nav  main-nav--closed">
+                        <div class="logo  logo--header">
+                            <img src="img/logo-pink-white-mobile.svg" width="80" height="24" alt="Pink Logo">
+                        </div>
+                        <span class="main-nav__toggle"></span>
+                        <div class="main-nav__wrapper">
+                            <ul class="main-nav__list">
+                                <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+                                <li class="main-nav__list-item"><a>Фотографии</a></li>
+                                <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+                                <li class="main-nav__list-item"><a href="http://htmlacademy.ru">HMTL Academy</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
         </header>
 
         <main class="page-main">
-            <section class="intro">
-                <div class="content-wrapper">
-                    <p>Фотографии пользователей</p>
-                </div>
-            </section>
-
             <section class="posts">
+                <div class="posts__intro">
+                    <h1 class="posts__intro-text">Фотографии пользователей</h1>
+                </div>
                 <div class="posts__header">
                     <div class="content-wrapper">
-                        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+                        <p class="posts__header-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
                     </div>
                 </div>
                 <div class="posts__list">
@@ -55,144 +54,148 @@
                             </div>
                         </div>
                     </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Левон </b>
-                                <time class="posts__list-item-date" datetime="2016-03-06 17:50">(5 часов назад)</time>
-                                <p class="posts__list-item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                                <span class="posts__list-item-likes">Нравится: 356</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Антон </b>
-                                <time class="posts__list-item-date" datetime="2016-03-06 10:50">(12 часов назад)</time>
-                                <p class="posts__list-item-text">Соседи будут рады!</p>
-                                <span class="posts__list-item-likes">Нравится: 666</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Борис </b>
-                                <time class="posts__list-item-date" datetime="2016-03-06 02:50">(20 часов назад)</time>
-                                <p class="posts__list-item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                                <span class="posts__list-item-likes">Нравится: 215</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Сергей </b>
-                                <time class="posts__list-item-date" datetime="2016-03-05 21:50">(25 часов назад)</time>
-                                <p class="posts__list-item-text">Самая кубанская в мире!</p>
-                                <span class="posts__list-item-likes">Нравится: 4</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Максим </b>
-                                <time class="posts__list-item-date" datetime="2016-03-05 06:50">(40 часов назад)</time>
-                                <p class="posts__list-item-text">Где снег-то?</p>
-                                <span class="posts__list-item-likes">Нравится: 150</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="posts__list-item">
-                        <div class="content-wrapper">
-                            <div class="posts__list-item-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
-                                </a>
-                            </div>
-                            <div class="posts__list-item-info">
-                                <b class="posts__list-item-author">Надежда </b>
-                                <time class="posts__list-item-date" datetime="2016-03-05 01:50">(45 часов назад)</time>
-                                <p class="posts__list-item-text">Всем GM и взаимные лайки!</p>
-                                <span class="posts__list-item-likes">Нравится: 2560</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="posts__footer">
                     <div class="content-wrapper">
-                        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Левон </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-06 17:50">(5 часов назад)</time>
+                                    <p class="posts__list-item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                                    <span class="posts__list-item-likes">Нравится: 356</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Антон </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-06 10:50">(12 часов назад)</time>
+                                    <p class="posts__list-item-text">Соседи будут рады!</p>
+                                    <span class="posts__list-item-likes">Нравится: 666</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Борис </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-06 02:50">(20 часов назад)</time>
+                                    <p class="posts__list-item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                                    <span class="posts__list-item-likes">Нравится: 215</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Сергей </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-05 21:50">(25 часов назад)</time>
+                                    <p class="posts__list-item-text">Самая кубанская в мире!</p>
+                                    <span class="posts__list-item-likes">Нравится: 4</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Максим </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-05 06:50">(40 часов назад)</time>
+                                    <p class="posts__list-item-text">Где снег-то?</p>
+                                    <span class="posts__list-item-likes">Нравится: 150</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="posts__list-item">
+                            <div class="content-wrapper">
+                                <div class="posts__list-item-image">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x100" width="150" height="100" alt="image-1">
+                                    </a>
+                                </div>
+                                <div class="posts__list-item-info">
+                                    <b class="posts__list-item-author">Надежда </b>
+                                    <time class="posts__list-item-date" datetime="2016-03-05 01:50">(45 часов назад)</time>
+                                    <p class="posts__list-item-text">Всем GM и взаимные лайки!</p>
+                                    <span class="posts__list-item-likes">Нравится: 2560</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
             <section class="add-item">
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <div class="add-item__photo">
-                        <img src="http://placehold.it/150x100" width="150" height="100" alt="your photo">
-                    </div>
-                    <div class="add-item__edit-tools">
-                        <div class="add-item__edit-tools-item">
-                            <input type="radio" name="edit-tool" value="crop" checked>
-                            <label id="edit-tool-crop"></label>
+                <div class="content-wrapper">
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <div class="add-item__intro">
+                            <p class="att-item__intro-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
                         </div>
-                        <div class="add-item__edit-tools-item">
-                            <input type="radio" name="edit-tool" value="fill">
-                            <label id="edit-tool-fill"></label>
+                        <div class="add-item__photo">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="your photo">
                         </div>
-                        <div class="add-item__edit-tools-item">
-                            <input type="radio" name="edit-tool" value="contrast">
-                            <label id="edit-tool-contrast"></label>
-                        </div>
-                    </div>
-                    <div class="add-item__edit-tools-value">
-                        <input type="text" name="edit-tool-crop-value">
-                        <div id="edit-tool-crop-value"></div>
+                        <div class="add-item__edit">
+                            <div class="add-item__edit-tools">
+                                <div class="add-item__edit-tools-item">
+                                    <input type="radio" name="edit-tool" value="crop" checked>
+                                    <label id="edit-tool-crop"></label>
+                                </div>
+                                <div class="add-item__edit-tools-item">
+                                    <input type="radio" name="edit-tool" value="fill">
+                                    <label id="edit-tool-fill"></label>
+                                </div>
+                                <div class="add-item__edit-tools-item">
+                                    <input type="radio" name="edit-tool" value="contrast">
+                                    <label id="edit-tool-contrast"></label>
+                                </div>
+                            </div>
+                            <div class="add-item__edit-tools-value">
+                                <input type="text" name="edit-tool-crop-value">
+                                <div id="edit-tool-crop-value"></div>
 
-                        <input type="text" name="edit-tool-fill-value">
-                        <div id="edit-tool-fill-value"></div>
+                                <input type="text" name="edit-tool-fill-value">
+                                <div id="edit-tool-fill-value"></div>
 
-                        <input type="text" name="edit-tool-contrast-value">
-                        <div id="edit-tool-contrast-value"></div>
-                    </div>
-                    <div class="add-item__actions">
-                        <input type="submit" class="btn btn--post" value="Запостить">
-                        <input type="reset" class="btn btn--cancel" value="Отмена">
-                    </div>
-                </form>
+                                <input type="text" name="edit-tool-contrast-value">
+                                <div id="edit-tool-contrast-value"></div>
+                            </div>
+                            <div class="add-item__actions">
+                                <input type="submit" class="btn btn--post" value="Запостить">
+                                <input type="reset" class="btn btn--cancel" value="Отмена">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
         <footer class="page-footer">
             <div class="content-wrapper">
-                <a class="logo  logo--footer" href="index.html">
+                <a class="page-footer__logo" href="index.html">
                     <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
                 </a>
                 <div class="page-footer__social">
