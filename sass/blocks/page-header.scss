@@ -1,3 +1,17 @@
 .page-header {
-	@include outline($color-level-1);
+    @include outline($color-level-1);
+    position: relative;
+    &__top {
+        @include outline($color-level-2);
+        position: relative;
+        margin-bottom: 390px;
+        height: $mob-page-header-top-height;
+        @media ($tablet-widths) {
+            margin-bottom: 620px;
+            height: $tab-page-header-top-height;
+        }
+        .content-wrapper {
+            @include outline($color-level-3);
+        }
+    }
 }

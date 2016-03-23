@@ -1,3 +1,23 @@
 .contacts {
-	@include outline($color-level-3);
+	@include outline($color-level-1);
+	text-align: center;
+	.content-wrapper {
+		@include outline($color-level-2);
+	}
+	&__header {
+		@include outline($color-level-3);
+	}
+	&__list {
+		@include outline($color-level-3);
+		@extend %norm-list;
+	}
+	&__list-item {
+		@include outline($color-level-4);
+	}
+	@media ($tablet-widths) {
+		&__list-item {
+			display: inline-block;
+			width: 300px;
+		}
+	}
 }

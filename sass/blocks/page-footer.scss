@@ -1,3 +1,27 @@
 .page-footer {
 	@include outline($color-level-1);
+	.content-wrapper {
+		@include outline($color-level-2);
+	}
+	&__logo,
+	&__social,
+	&__copyright {
+		@include outline($color-level-3);
+		display: block;
+		text-align: center;
+	}
+	@media ($tablet-widths) {
+		&__logo,
+		&__social,
+		&__copyright {
+			display: inline-block;
+		}
+	}
+}
+
+.index .page-footer {
+	display: none;
+	@media ($tablet-widths) {
+		display: block;
+	}
 }

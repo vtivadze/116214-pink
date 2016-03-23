@@ -1,5 +1,10 @@
+@import "../css/normalize.css";
+
 @import "variables";
 @import "mixins";
+
+@import "global/layout";
+@import "global/templates";
 
 @import "blocks/page-header";
 @import "blocks/page-footer";
@@ -8,11 +13,13 @@
 @import "blocks/logo";
 @import "blocks/download";
 @import "blocks/characteristics";
+@import "blocks/promo";
 @import "blocks/review";
 @import "blocks/price";
 @import "blocks/contacts";
 @import "blocks/posts";
 @import "blocks/add-item";
+@import "blocks/form";
 @import "blocks/form-block";
 @import "blocks/form-popup";
 

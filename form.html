@@ -5,36 +5,38 @@
         <title>Пинк Регистрации</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="form-page">
 
         <header class="page-header">
-            <div class="content-wrapper">
-                <a class="logo  logo--header" href="index.html">
-                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink Logo">
-                </a>
-                <nav class="main-nav  main-nav--closed">
-                    <span class="main-nav__toggle"></span>
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-                            <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
-                            <li class="main-nav__list-item main-nav__list-item--current">Конкурс</li>
-                            <li class="main-nav__list-item"><a href="htmlacademy.ru">HMTL Academy</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <section class="page-header__top">
+                <div class="content-wrapper">
+                    <nav class="main-nav  main-nav--closed">
+                        <div class="logo  logo--header">
+                            <img src="img/logo-pink-white-mobile.svg" width="80" height="24" alt="Pink Logo">
+                        </div>
+                        <span class="main-nav__toggle"></span>
+                        <div class="main-nav__wrapper">
+                            <ul class="main-nav__list">
+                                <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+                                <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+                                <li class="main-nav__list-item"><a>Конкурс</a></li>
+                                <li class="main-nav__list-item"><a href="http://htmlacademy.ru">HMTL Academy</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
         </header>
 
         <main class="page-main">
             <div class="content-wrapper">
-
+                <div class="form__intro">
+                    <h1 class="form__intro-text">Конкурс на самое безбашеное путешествие с Пинк</h1>
+                </div>
+                <div class="form__header">
+                    <p class="form__header-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+                </div>
                 <form class="form" action="http://echo.htmlacademy.ru" method="post">
-
-                    <div class="intro">
-                        <p>Конкурс на самое безбашеное путешествие с Пинк</p>
-                    </div>
-
                     <fieldset class="form__block  form__block--user-info">
                         <div class="form__item">
                             <label for="user-name-field">Имя:</label>
@@ -53,53 +55,59 @@
                     </fieldset>
 
                     <fieldset class="form__block  form__block--user-achievments">
-                        <div class="form__legend">Ваши безбашенные достижения в путешествии</div>
+                        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                        <div class="item-group-wrapper">
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="self" id="self-field" checked>
+                                <label for="self-field">Сделал селфи с акулой</label>
+                            </div>
 
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="self" id="self-field" checked>
-                            <label for="self-field">Сделал селфи с акулой</label>
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="burned" id="burned-field" checked>
+                                <label for="burned-field">Обгорел на пляже</label>
+                            </div>
+                        </div>
+                        
+                        <div class="item-group-wrapper">
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="noris" id="noris-field">
+                                <label for="noris-field">Видел Чака Норриса</label>
+                            </div>
+
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="souvenirs" id="souvenirs-field">
+                                <label for="souvenirs-field">Накупил сувениров</label>
+                            </div>
                         </div>
 
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="burned" id="burned-field" checked>
-                            <label for="burned-field">Обгорел на пляже</label>
-                        </div>
+                        <div class="item-group-wrapper">
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="tower" id="tower-field" checked>
+                                <label for="tower-field">Удержал башню</label>
+                            </div>
 
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="noris" id="noris-field">
-                            <label for="noris-field">Видел Чака Норриса</label>
-                        </div>
-
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="souvenirs" id="souvenirs-field">
-                            <label for="souvenirs-field">Накупил сувениров</label>
-                        </div>
-
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="tower" id="tower-field" checked>
-                            <label for="tower-field">Удержал башню</label>
-                        </div>
-
-                        <div class="form__item">
-                            <input class="form__checkbox-el" type="checkbox" name="achievements" value="hotel" id="hotel-field">
-                            <label for="hotel-field">Разгромил отель</label>
+                            <div class="form__item">
+                                <input class="form__checkbox-el" type="checkbox" name="achievements" value="hotel" id="hotel-field">
+                                <label for="hotel-field">Разгромил отель</label>
+                            </div>
                         </div>
                     </fieldset>
 
                     <fieldset class="form__block  form__block--user-contacts">
+                        <legend>Контактная информация</legend>
                         <div class="form__item">
-                            <label for="phone-field">Номерок телефончика</label>
-                            <input class="form__text-field" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+                            <label for="phone-field">Номер телефона</label>
+                            <input class="form__text-field" type="tel" name="phone" id="phone-field" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
                         </div>
 
                         <div class="form__item">
-                            <label for="email-field">адресок почты</label>
-                            <input class="form__text-field" type="email" name="email" id="email-field" placeholder="E-mail, пожалуйста">
+                            <label for="email-field">Адрес почты</label>
+                            <input class="form__text-field" type="email" name="email" id="email-field" placeholder="Введите почту">
                         </div>
                     </fieldset>
 
                     <fieldset class="form__block  form__block--user-application">
-                        <div class="form__legend">С каким приложением путешествовали?</div>
+                        <legend class="form__legend">С каким приложением путешествовали?</legend>
 
                         <div class="form__item">
                             <input class="form__radio-el" type="radio" name="application" value="ios" id="ios-field" checked>
@@ -118,13 +126,12 @@
                     </fieldset>
 
                     <fieldset class="form__block  form__block--user-emotions">
-                        <div class="form__legend">Опишите свои эмоции</div>
+                        <legend class="form__legend">Опишите свои эмоции</legend>
                         <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                     </fieldset>
-
-                    <input class="form__btn" type="submit" value="Отправить форму">
-
+                    
                     <div class="form__footer">
+                        <input class="form__btn" type="submit" value="Отправить форму">
                         <span><sup>*</sup>— обязательные поля</span>
                     </div>
 

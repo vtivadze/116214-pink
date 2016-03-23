@@ -1,0 +1,169 @@
+.form-page {
+    .page-main {
+        .content-wrapper {
+            @include outline($color-level-2);
+            position: relative;
+            .form__intro {
+                @include outline($color-level-3);
+                position: absolute;
+                top: -250px;
+                .form__intro-text {
+                    @include outline($color-level-4);
+                    text-align: center;
+                }
+            }
+            .form__header {
+                @include outline($color-level-3);
+                .form__header-text {
+                    @include outline($color-level-4);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    position: relative;
+}
+
+.form__block--user-info {
+    .form__item * {
+        display: block;
+        @media ($tablet-widths) {
+            display: inline;
+        }
+    }
+    @media ($tablet-widths) {
+        margin-bottom: 260px;
+    }
+    @media ($descktop-widths) {
+        width: 470px;
+        margin-bottom: 140px;
+    }
+}
+
+.form__block--user-achievments {
+    border: none;
+    @media ($tablet-widths) {
+        border: 1px solid grey;
+    }
+    legend {
+        text-align: center;
+    }
+    @media ($descktop-widths) {
+        .item-group-wrapper {
+            display: inline-block;
+        }
+    }
+}
+
+.form__block--user-contacts {
+    border: none;
+    @media ($tablet-widths) {
+        border: 1px solid grey;
+    }
+    legend {
+        display: none;
+        @media ($tablet-widths) {
+            display: block;
+        }
+    }
+    @media ($tablet-widths) {
+        .form__item {
+            position: relative;
+            label {
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+            }
+            input {
+                margin-bottom: 30px;
+            }
+        }
+        position: absolute;
+        left: 0;
+        top: 200px;
+    }
+    @media ($descktop-widths) {
+        top: 130px;
+        right: 0;
+        .form__item:last-child {
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+    }
+}
+
+.form__block--user-application {
+    border: none;
+    @media ($tablet-widths) {
+        border: 1px solid grey;
+    }
+    legend {
+        text-align: center;
+    }
+    @media ($tablet-widths) {
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    @media ($descktop-widths) {
+        left: auto;
+        right: 0;
+        top: 0;
+    }
+}
+
+.form__block--user-emotions {
+    border: none;
+    @media ($tablet-widths) {
+        border: 1px solid grey;
+    }
+    legend {
+        text-align: center;
+    }
+}
+
+.form__footer {
+    @include outline($color-level-3);
+    & input,
+    & span {
+        display: block;
+        @media ($tablet-widths) {
+            display: inline-block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,40 @@
 .posts {
-	@include outline($color-level-2);
+    @include outline($color-level-2);
+    position: relative;
+    &__intro {
+        @include outline($color-level-3);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -170px;
+        width: $mob-body-width;
+        &-text {
+            text-align: center;
+        }
+    }
+    &__header {
+        @include outline($color-level-3);
+        .content-wrapper {
+            @include outline($color-level-4);
+        }
+        &-text {
+            @include outline($color-level-5);
+            text-align: center;
+        }
+    }
+    &__list {
+        @include outline($color-level-3);
+        &-item {
+            @include outline($color-level-4);
+
+        }
+        @media ($tablet-widths) {
+            .content-wrapper {
+                .posts__list-item {
+                    display: inline-block;
+                    width: 300px;
+                }
+            }
+        }
+    }
 }

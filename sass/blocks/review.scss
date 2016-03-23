@@ -1,3 +1,50 @@
 .review {
-	@include outline($color-level-3);
+    @include outline($color-level-1);
+    .content-wrapper {
+        @include outline($color-level-2);
+    }
+    .slider__toggler {
+        display: none;
+    }
+    &__quote-author-name {
+        display: block;
+    }
+    &__quote-author-info {
+        display: none;
+    }
+    &__list {
+        @include outline($color-level-3);
+        @extend %norm-list;
+        &-item {
+            @include outline($color-level-4);
+            text-align: center;
+        }
+        &-item:nth-child(n+2) {
+            display: none;
+        }
+    }
+    &__quote {
+        @include outline($color-level-5);
+        &-author {
+            @include outline($color-level-6);
+        }
+        &-text {
+            @include outline($color-level-6);
+        }
+    }
+    @media ($tablet-widths) {
+        &__quote {
+            position: relative;
+            padding-bottom: 100px;
+            &-author {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                &-info {
+                    display: block;
+                }
+            }
+        }
+    }
 }

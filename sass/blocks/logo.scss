@@ -1,3 +1,6 @@
 .logo {
-    @include outline($color-level-2);
+    @include outline($color-level-5);
+    display: block;
+    @include float-left;
+    font-size: 0;
 }
